@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package luna
+ * @package Luna
  */
 
 if ( ! function_exists( 'luna_posted_on' ) ) :

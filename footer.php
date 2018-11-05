@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package luna
+ * @package Luna
  */
 
 ?>
@@ -24,7 +24,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'luna' ), 'luna', '<a href="http://underscores.me/">Underscores.me</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'luna' ), 'luna', '<a href="http://drossel.sk">Drossel | Creative Studio</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

@@ -1,8 +1,8 @@
 <?php
 /**
- * luna Theme Customizer
+ * Luna Theme Customizer
  *
- * @package luna
+ * @package Luna
  */
 
 /**
