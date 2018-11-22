@@ -40,6 +40,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Contact Form	
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -980,5 +981,20 @@ object {
 }
 
 .gallery-caption {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Contact Form
+--------------------------------------------------------------*/
+.form-control-msg, .form-control-invalid-email {
+	display: none;
+}
+/* has-error je class, ktory sa priradi small elementu z contact-form.js aby bol zobrazeny error  */
+.has-error > .form-control-msg {
+	display: block;
+}
+/* js-show-feedback je class, ktory sa prida small elementu z contact-form.js aby bol zobrazeny feedback */
+.js-show-feedback {
 	display: block;
 }
