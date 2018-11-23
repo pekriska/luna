@@ -18,7 +18,7 @@
         <small class="text-danger form-control-msg">Zadajte správu</small>
 	</div>
 
-    <button type="stubmit" id="contact-form-submit-btn" class="btn btn-default">Submit</button>
+    <button type="stubmit" id="contact-form-submit-btn" class="btn form-btn btn-default">Submit</button>
     <input type="checkbox" name="personal-data-checkbox" id="personal-data-checkbox">Súhlasím so spracovaním osobných údajov
 
     
