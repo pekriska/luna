@@ -2,6 +2,16 @@
 // Subor riesi validaciu formularu, pridava a odobera classy pre vypis oznameni vola ajax.php
 $(document).ready( function () {
 
+    $('#contact-form-submit-btn').attr('disabled', 'disabled');
+
+    $('#personal-data-checkbox').click(function() {
+        if ($(this).is(':checked')) {
+            $('#contact-form-submit-btn').removeAttr('disabled');
+        } else {
+            $('#contact-form-submit-btn').attr('disabled', 'disabled');
+        }
+    });
+
     $('#drosselContactForm').on('submit', function(e){
     
         e.preventDefault();
@@ -66,7 +76,8 @@ $(document).ready( function () {
                         setTimeout(function(){
                             $('.js-form-submission').removeClass('js-show-feedback');
                             $('.js-form-success').addClass('js-show-feedback');
-                            form.find('input, button, textarea').removeAttr('disabled', 'disabled', 'disabled').val('');
+                            form.find('input, textarea').removeAttr('disabled', 'disabled').val('');
+                            $('#personal-data-checkbox').attr('checked', false);
                         }, 1000);
                     }
                 }
