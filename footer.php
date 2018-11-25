@@ -25,6 +25,10 @@
 				<div class="site-footer-menu">
 					FOOTER MENU
 				</div>
+				<div class="site-footer-sig">
+					<div class="copy">&copy2019 Dako-elektro s.r.o. | Všetky práva vyhredené | Všeobecné podmienky | v1.3.0</div>
+					<div class="sig">Vytvoril Drossel</div>
+				</div>
 			</div>
 		</div>
 	</footer><!-- #colophon -->

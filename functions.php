@@ -136,6 +136,28 @@ function luna_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'luna_scripts' );
 
+/*
+==================================================
+Include Fontello icon
+==================================================
+*/
+
+function wp_load_fontello() { 
+	wp_enqueue_style( 'wp-fontello', get_stylesheet_directory_uri() . '/css/css/fontello.css' );
+	 
+	}
+	add_action( 'wp_enqueue_scripts', 'wp_load_fontello' );
+
+/*
+* Custom Google font
+*/
+add_action('wp_enqueue_scripts', 'add_google_fonts');
+function add_google_fonts(){
+	wp_enqueue_style('google_web_fonts','https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext');
+}
+
+
+
 /**
  * Implement the Custom Header feature.
  */
