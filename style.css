@@ -1005,3 +1005,39 @@ button[disabled]{
   background-color: #cccccc;
   color: #666666;
 }
+
+
+
+
+.wrapp{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.site-footer{
+	width: 100%;
+	min-height: 400px;
+	background: #32323D;
+}
+.colophone-one{
+	width: 100%;
+	height: 60px;
+	background: #07BCFF;
+	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+.colophone-two{
+	width: 100%;
+	height: 60px;
+	background: #32323D;
+	-webkit-clip-path: polygon(0 30%, 100% 15%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 30%, 100% 15%, 100% 100%, 0% 100%);
+}
+
+	.site-footer-nesletter, .site-footer-menu{
+		border-top:1px solid #414141;
+		padding:30px 0;
+		text-align: center;
+	}
+	.site-footer-nesletter{
+		color: #817F7F;
+	}
