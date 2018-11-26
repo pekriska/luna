@@ -113,6 +113,34 @@ function luna_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer-menu-1', 'vesna' ),
+		'id'            => 'footer-menu-1',
+		'description'   => esc_html__( 'Add widgets here.', 'vesna' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer-menu-2', 'vesna' ),
+		'id'            => 'footer-menu-2',
+		'description'   => esc_html__( 'Add widgets here.', 'vesna' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer-menu-3', 'vesna' ),
+		'id'            => 'footer-menu-3',
+		'description'   => esc_html__( 'Add widgets here.', 'vesna' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer-menu-4', 'vesna' ),
+		'id'            => 'footer-menu-4',
+		'description'   => esc_html__( 'Add widgets here.', 'gustoe' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
 }
 add_action( 'widgets_init', 'luna_widgets_init' );
 

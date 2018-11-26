@@ -1038,7 +1038,6 @@ button[disabled]{
 	.site-footer-nesletter, .site-footer-menu{
 		border-top:1px solid #414141;
 		padding:30px 0;
-		text-align: center;
 	}
 	.site-footer-nesletter{
 		color: #817F7F;
@@ -1047,9 +1046,10 @@ button[disabled]{
 		border-top:1px solid #414141;
 		padding-top: 10px;
 		color: #fff;
-		font-size: 0.8em;
+		font-size: 0.7em;
 		font-weight: 300;
 		clear: both;
+		margin-bottom: 150px;
 	}
 		.copy{
 			float: left;
@@ -1057,3 +1057,14 @@ button[disabled]{
 		.sig{
 			float: right;
 		}
+.widget_nav_menu{
+	float: left;
+	width: 25%;
+	text-align: left;
+}
+	.widget h2{
+		font-size: 0.9em;
+		text-transform: uppercase;
+		color: #fff;
+		text-align: left;
+	}
