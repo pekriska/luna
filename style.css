@@ -616,7 +616,7 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
+/* a {
 	color: royalblue;
 }
 
@@ -634,7 +634,7 @@ a:focus {
 
 a:hover, a:active {
 	outline: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 ## Menus
@@ -1057,14 +1057,24 @@ button[disabled]{
 		.sig{
 			float: right;
 		}
+			.sig a, .sig a:link{
+				color:#07BCFF;
+				text-decoration: none;
+			}
 .widget_nav_menu{
 	float: left;
 	width: 25%;
 	text-align: left;
 }
+.widget_media_image{
+	float: left;
+	width: 25%;
+}
 	.widget h2{
 		font-size: 0.9em;
+		letter-spacing: 1px;
 		text-transform: uppercase;
 		color: #fff;
+		font-family: 'Montserrat';
 		text-align: left;
 	}

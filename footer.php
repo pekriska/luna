@@ -30,7 +30,7 @@
 				</div>
 				<div class="site-footer-sig">
 					<div class="copy">&copy2019 Dako-elektro s.r.o., Všetky práva vyhredené | Všeobecné podmienky | v1.3.0</div>
-					<div class="sig">Vytvoril Drossel</div>
+					<div class="sig">Vytvoril <a href="https://www.drossel.sk" target="_blank" title="Klikne pre zobrazenie vývojára" >Drossel</a></div>
 				</div>
 			</div>
 		</div>
