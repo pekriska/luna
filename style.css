@@ -530,18 +530,16 @@ table {
 # Forms
 --------------------------------------------------------------*/
 button,
-input[type="button"],
-input[type="reset"],
+/* input[type="button"],
+input[type="reset"], */
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 12px;
-	font-size: 0.75rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: .9em;
+	background: #07BCFF;
+	width: 100%;
 }
 
 button:hover,
@@ -578,9 +576,15 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
+	border: 1px solid #EFEDED;
+	border-radius: 10px;
+	font-style: italic;
+	padding: 15px;
+	width: 95%;
+	margin: 10px;
+}
+textarea{
+	min-height: 208px;
 }
 
 input[type="text"]:focus,
@@ -1003,9 +1007,29 @@ object {
 
 .form-btn:disabled,
 button[disabled]{
-  border: 1px solid #999999;
-  background-color: #cccccc;
+  border: none;
+  background-color:rgb(244, 244, 244);
   color: #666666;
+  font-size: .9em;
+}
+
+.site-contact-left{
+	float: left;
+	width: 50%;
+	/* padding: 10px; */
+}
+.site-contact-right{
+	clear: both;
+}
+	.site-contact-right p{
+		margin: 0px;
+		padding: 5px; 
+	}
+form button{
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	margin-top: 10px; 
+	cursor: pointer;
 }
 
 
