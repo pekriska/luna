@@ -997,8 +997,9 @@ object {
 	display: none;
 }
 /* has-error je class, ktory sa priradi small elementu z contact-form.js aby bol zobrazeny error  */
-.has-error > .form-control-msg {
-	display: block;
+.has-error > .form-control {
+	/* display: block; */
+	border: 1px solid #FF9494 !important;
 }
 /* js-show-feedback je class, ktory sa prida small elementu z contact-form.js aby bol zobrazeny feedback */
 .js-show-feedback {
