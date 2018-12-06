@@ -11,7 +11,6 @@
 
         <div class="form-group">
                     <input type="text" class="form-control" placeholder="Váš email*" id="email" name="email" >
-                    <small class="text-danger form-control-msg">Zadajte správny e-mail</small>
         </div>
         <div class="form-group">
                     <input type="text" class="form-control" placeholder="Telefónny kontakt" id="phone" name="phone" >
@@ -20,7 +19,6 @@
     <div class="site-contact-left">
         <div class="form-group">
                     <textarea name="message" id="message" class="form-control" placeholder="Vaša správa*"></textarea>
-                    <small class="text-danger form-control-msg">Zadajte správu</small>
         </div>
     </div>
     <div class="site-contact-right">
