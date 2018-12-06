@@ -1,6 +1,8 @@
 <?php
 // kostra kontaktneho formularu.
 ?>
+
+<div clas="heading-center">Kontaktný formulár</div>
 <form id="drosselContactForm"  action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
 	<div class="site-contact-left">
@@ -17,15 +19,15 @@
     </div>
     <div class="site-contact-left">
         <div class="form-group">
-                    <textarea name="message" id="message" class="form-control" placeholder="Vaša správa*"></textarea>
+            <textarea name="message" id="message" class="form-control" placeholder="Vaša správa*"></textarea>
         </div>
     </div>
     <div class="site-contact-right">
-        <p>* Povinné položky</p>
         <p>
             <input type="checkbox" name="personal-data-checkbox" id="personal-data-checkbox"> Súhlasím so spracovaním osobných údajov v zmysle GDPR. *</br>
 
         </p>
+        <p class="mini">* Povinné položky</p>
     </div>
         <button type="submit" id="contact-form-submit-btn" title="Pre odoslanie vyplň povinné položky" class="btn form-btn btn-default">odoslať správu</button>
     

@@ -1025,12 +1025,19 @@ button[disabled]{
 	.site-contact-right p{
 		margin: 0px;
 		padding: 5px; 
+		/* font-size: 0.9em; */
+		color: #817F7F;
 	}
+	.mini{
+		font-size: 0.2em;
+	}
+
 form button{
 	font-family: 'Montserrat';
 	text-transform: uppercase;
 	margin-top: 10px; 
 	cursor: pointer;
+	letter-spacing: 10px;
 }
 
 
