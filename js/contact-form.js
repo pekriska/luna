@@ -29,24 +29,19 @@ $(document).ready( function () {
             var regex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
             return regex.test(email);
         }
-        var hasError = 0;
 
         if( name === '' ){
             $('#name').parent('.form-group').addClass('has-error');
-            hasError = 1;
+            return;
         }
     
         if( !IsEmail(email) ){
             $('#email').parent('.form-group').addClass('has-error');
-            hasError = 1;
+            return;
         }
     
         if( message === '' ){
             $('#message').parent('.form-group').addClass('has-error');
-            hasError = 1;
-        }
-
-        if (hasError == 1){
             return;
         }
 
