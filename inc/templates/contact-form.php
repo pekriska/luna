@@ -14,7 +14,7 @@
                     <small class="text-danger form-control-msg">Zadajte správny e-mail</small>
         </div>
         <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Kontaktné číslo" id="phone" name="phone" >
+                    <input type="text" class="form-control" placeholder="Telefónny kontakt" id="phone" name="phone" >
         </div>
     </div>
     <div class="site-contact-left">

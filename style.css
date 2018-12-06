@@ -536,7 +536,7 @@ input[type="submit"] {
 	color: #fff;
 	border: none;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 15px;
 	font-size: .9em;
 	background: #07BCFF;
 	width: 100%;
@@ -581,7 +581,8 @@ textarea {
 	font-style: italic;
 	padding: 15px;
 	width: 95%;
-	margin: 10px;
+	margin-bottom: 20px;
+	/* margin: 10px; */
 }
 textarea{
 	min-height: 208px;
@@ -997,9 +998,8 @@ object {
 	display: none;
 }
 /* has-error je class, ktory sa priradi small elementu z contact-form.js aby bol zobrazeny error  */
-.has-error > .form-control {
-	/* display: block; */
-	border: 1px solid #FF9494 !important;
+.has-error > .form-control-msg {
+	display: block;
 }
 /* js-show-feedback je class, ktory sa prida small elementu z contact-form.js aby bol zobrazeny feedback */
 .js-show-feedback {
@@ -1103,3 +1103,11 @@ form button{
 		font-family: 'Montserrat';
 		text-align: left;
 	}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
