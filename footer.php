@@ -20,7 +20,7 @@
 		<div class="site-footer">
 			<div class="wrapp">
 				<div class="site-footer-nesletter">
-					NEWSLETTER
+				<div class="heading-center-footer">newsletter</div>
 				</div>
 				<div class="site-footer-menu">
 					<?php dynamic_sidebar( 'footer-menu-1' ) ?>

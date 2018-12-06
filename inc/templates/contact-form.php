@@ -2,7 +2,7 @@
 // kostra kontaktneho formularu.
 ?>
 
-<div clas="heading-center">Kontaktný formulár</div>
+<div class="heading-center ">Kontaktný formulár</div>
 <form id="drosselContactForm"  action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
 	<div class="site-contact-left">
