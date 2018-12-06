@@ -6,7 +6,6 @@
 	<div class="site-contact-left">
         <div class="form-group">
                     <input type="text" class="form-control" placeholder="Vaše meno*" id="name" name="name">
-                    <small class="text-danger form-control-msg">Zadajte meno</small>
         </div>
 
         <div class="form-group">
