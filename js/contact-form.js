@@ -22,6 +22,7 @@ $(document).ready( function () {
         var form    =  $(this);
             name    =  form.find('#name').val();
             email   =  form.find('#email').val();
+            phoneNumber = form.find('#phone').val();
             message =  form.find('#message').val();
             ajaxurl =  form.data('url');
 
@@ -61,6 +62,7 @@ $(document).ready( function () {
             data : {   
                 name    : name,
                 email   : email,
+                phoneNumber : phoneNumber,
                 message : message,
                 action  : 'drossel_save_user_contact_form'   
                 },

@@ -15,7 +15,8 @@ add_action( 'wp_ajax_drossel_save_user_contact_form', 'drossel_save_contact' );
 function drossel_save_contact(){
 	$title   =  wp_strip_all_tags($_POST["name"]);
 	$email   =  wp_strip_all_tags($_POST["email"]);
-	$message =  wp_strip_all_tags($_POST["message"]);
+    $message =  wp_strip_all_tags($_POST["message"]);
+    $phone   =  wp_strip_all_tags($_POST["phoneNumber"]);
     
     // echo $title . ',' . $email . ',' .$message;
     //wp_insert_post();
@@ -26,6 +27,7 @@ function drossel_save_contact(){
     
     $headers[] = 'From: '.get_bloginfo('name').' <'.$to.'>'; 
     $headers[] = 'Reply-To: '.$title.' <'.$email.'>';
+    $headers[] = 'Phone: '.$phone;
     $headers[] = 'Content-Type: text/html: charset=UTF-8';
    
     echo wp_mail($to, $subject, $message, $headers);
