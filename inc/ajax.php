@@ -17,6 +17,19 @@ function drossel_save_contact(){
 	$email   =  wp_strip_all_tags($_POST["email"]);
     $message =  wp_strip_all_tags($_POST["message"]);
     $phone   =  wp_strip_all_tags($_POST["phoneNumber"]);
+   
+   
+   
+    // $body = 'this is msg';
+   
+   
+    ob_start();
+	include 'templates/contact-message-html.php';
+	$body = ob_get_clean();
+   
+   
+   
+  
     
     // echo $title . ',' . $email . ',' .$message;
     //wp_insert_post();
@@ -27,10 +40,9 @@ function drossel_save_contact(){
     
     $headers[] = 'From: '.get_bloginfo('name').' <'.$to.'>'; 
     $headers[] = 'Reply-To: '.$title.' <'.$email.'>';
-    $headers[] = 'Phone: '.$phone;
-    $headers[] = 'Content-Type: text/html: charset=UTF-8';
+    $headers[] = 'Content-Type: text/html; charset=UTF-8';
    
-    echo wp_mail($to, $subject, $message, $headers);
+    echo wp_mail($to, $subject, $body, $headers);
     
 
 	die();
