@@ -19,21 +19,11 @@ function drossel_save_contact(){
     $phone   =  wp_strip_all_tags($_POST["phoneNumber"]);
    
    
-   
-    // $body = 'this is msg';
-   
-   
     ob_start();
 	include 'templates/contact-message-html.php';
 	$body = ob_get_clean();
    
    
-   
-  
-    
-    // echo $title . ',' . $email . ',' .$message;
-    //wp_insert_post();
-
     //email settings
     $to = get_bloginfo('admin_email');
     $subject = 'Drossel Contact Form - '.$title;
