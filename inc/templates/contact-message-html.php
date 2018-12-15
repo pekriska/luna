@@ -3,6 +3,32 @@
         <head>
             <!-- General styles, not used by all email clients -->
             <style type="text/css" media="all">
+            @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+                body{
+                    background: #fff;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                .wrapp{
+                    max-width: 800px;
+                    padding: 30px;
+                    margin: 0 auto;
+                }
+                .center{
+                    text-align:center;
+                }
+
+
+
+                .footer-sub-text{
+                    font-size: .8em;
+                    color: #ACACAC;
+                }
+                    .sig{
+                        margin-top: 40px;
+                        color: #DDDDDD;
+                        font-size: .8em;
+                        letter-spacing: 5px;
+                    }
                 a {
                     text-decoration: none;
                     color: #0088cc;
@@ -14,13 +40,31 @@
         </head>
     
         <!-- KEEP THE LAYOUT SIMPLE: THOSE ARE SERVICE MESSAGES. -->
-        <body style="margin: 0; padding: 0;">
-    
+        <body>
+                <header>
+                    <div class="wrapp">
+                        bl bla bla
+                    </div>
+                
+                </header>
+                <main>
+                
+                </main>
+                <footer>
+                    <div class="wrapp">
+                        <p class="center footer-sub-text">Táto správa bola automaticky generovaná systémom DMS | www.drossel.sk</p>
+                        <p class="center sig">DROSSEL | CREATIVE STUDIO</p>
+                    </div>
+                </footer>
+
+
+
+
             <!-- Top title with dark background -->
             <table style="background-color: #444; width: 100%;" cellspacing="0" cellpadding="0">
                 <tr>
                     <td style="padding: 20px; text-align: center; font-family: sans-serif; color: #fff; font-size: 28px">
-                        <?php echo get_bloginfo('name'); ?>
+                        <!-- <?php echo get_bloginfo('name'); ?> -->
                     </td>
                 </tr>
             </table>
