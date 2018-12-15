@@ -47,7 +47,7 @@
         <body>
                 <header>
                     <div class="wrapp">
-                        <!-- SEM MA IST LOGO -->
+                    <img src="<?php echo $image[0]; ?>">
                     </div>
                 
                 </header>

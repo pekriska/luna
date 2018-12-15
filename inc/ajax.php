@@ -18,6 +18,8 @@ function drossel_save_contact(){
     $message =  wp_strip_all_tags($_POST["message"]);
     $phone   =  wp_strip_all_tags($_POST["phoneNumber"]);
    
+    $custom_logo_id = get_theme_mod( 'custom_logo' );
+    $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
    
     ob_start();
 	include 'templates/contact-message-html.php';
