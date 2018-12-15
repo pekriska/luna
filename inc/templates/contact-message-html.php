@@ -16,7 +16,11 @@
                 .center{
                     text-align:center;
                 }
-
+                .text{
+                    line-height: 1.5;
+                    text-indent: 20px;
+                    text-align: justify;
+                }
 
 
                 .footer-sub-text{
@@ -43,16 +47,19 @@
         <body>
                 <header>
                     <div class="wrapp">
-                        bl bla bla
+                        <!-- SEM MA IST LOGO -->
                     </div>
                 
                 </header>
-                <main>
-                
+                <main class="wrapp">
+                    <div>
+                        <p>Ahoj Lenka, <b><?php echo $title;?></b> ti zasiela nasledovnú správu</p>
+                        <p class="text"><i><?php echo $message; ?></i></p>
+                    </div>
                 </main>
                 <footer>
                     <div class="wrapp">
-                        <p class="center footer-sub-text">Táto správa bola automaticky generovaná systémom DMS | www.drossel.sk</p>
+                        <p class="center footer-sub-text">Táto správa bola automaticky generovaná systémom DMS® | www.drossel.sk</p>
                         <p class="center sig">DROSSEL | CREATIVE STUDIO</p>
                     </div>
                 </footer>
