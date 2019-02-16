@@ -11,7 +11,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
+		<?php
+		if ( is_home() && ! is_front_page() ) :
+			the_title( '<h1 class="entry-title">', '</h1>' );		
+		endif;
+		?>
 	</header><!-- .entry-header -->
 
 	<?php luna_post_thumbnail(); ?>
