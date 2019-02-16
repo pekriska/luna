@@ -615,9 +615,7 @@ textarea {
 	width: 100%;
 }
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -817,6 +815,8 @@ a:hover, a:active {
 	content: "";
 	display: table;
 	table-layout: fixed;
+	padding: 0;
+	margin: 0;
 }
 
 .clear:after,
@@ -1042,11 +1042,25 @@ form button{
 
 
 
+body{
+	padding: 0;
+	margin: 0;
+}
 
+
+
+
+
+.wrapper{
+	max-width: 1920px;
+	margin: 0 auto;
+}
 .wrapp{
 	max-width: 1024px;
 	margin: 0 auto;
 }
+
+
 
 .heading-center, .heading-center-footer {
 	display: grid;
@@ -1078,9 +1092,27 @@ form button{
 	color: #414141;
   }
 
+img.custom-logo{
+	width: 20%;
+}
 
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
   
-  
+.site-branding{
+	width: 100%;
+	border-bottom: 1px solid #f4f4f4;
+}
+	.site-logo{
+		text-align: center;
+		margin-top: 20px;
+	}
+	.burger{
+		position: relative;
+		width: 5%;
+		right: 0;
+	}
 
 
 
