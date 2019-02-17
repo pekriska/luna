@@ -53,7 +53,14 @@
 		</div><!-- .site-branding -->
 		
 	</header><!-- #masthead -->
-<div class="placeholder wrapper">
+	<?php
+	if ( is_front_page() ) :
+		echo '<div class="placeholder wrapper">';
+		echo do_shortcode( '[slider id="337"]' );
+		echo '</div>';
+	endif;
+		?>
+<!-- <div class="placeholder wrapper">
 	sem pojde placeholder
-</div>
+</div> -->
 	<div id="content" class="site-content">

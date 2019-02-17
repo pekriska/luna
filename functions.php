@@ -223,6 +223,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 require get_template_directory() . '/inc/ajax.php';
 require get_template_directory() . '/inc/shortcodes.php';
+require get_template_directory() . '/inc/sliders.php';
 
 /**
  * Mail server settings on Localhost
