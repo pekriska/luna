@@ -694,21 +694,6 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -1092,8 +1077,22 @@ body{
 	color: #414141;
   }
 
+
 img.custom-logo{
 	width: 20%;
+	padding: 25px 0;
+}
+.site-header-bags,
+.hamburger{
+	float: left;
+	width: 10%;
+	height: 90px;
+}
+.site-header-logo{
+	text-align: center;
+	float: left;
+	width: 80%;
+	height: 90px;
 }
 
 /*--------------------------------------------------------------
@@ -1102,16 +1101,16 @@ img.custom-logo{
   
 .site-branding{
 	width: 100%;
+	height: 90px;
 	border-bottom: 1px solid #f4f4f4;
+	clear: both;
 }
 	.site-logo{
 		text-align: center;
 		margin-top: 20px;
 	}
-	.burger{
-		position: relative;
-		width: 5%;
-		right: 0;
+	.menu-toggle{
+		float: left;
 	}
 
 
