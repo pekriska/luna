@@ -31,7 +31,7 @@
 				<?php the_custom_logo();?>
 			</div>
 
-			<button class="hamburger hamburger--spin menu-toggle" type="button">
+			<button class="hamburger hamburger--slider menu-toggle" type="button">
 				<span class="hamburger-box">
 					<span class="hamburger-inner"></span>
 				</span>
