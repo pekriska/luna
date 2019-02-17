@@ -53,5 +53,7 @@
 		</div><!-- .site-branding -->
 		
 	</header><!-- #masthead -->
-
+<div class="placeholder wrapper">
+	sem pojde placeholder
+</div>
 	<div id="content" class="site-content">
