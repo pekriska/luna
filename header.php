@@ -45,9 +45,7 @@
 						'menu_id'        => 'primary-menu',
 						'menu_class' => 'menu-items',
 					) );
-					?>
-					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'vesna' ); ?></button> -->
-					
+					?>					
 				</nav><!-- #site-navigation -->
 			</div>
 		</div><!-- .site-branding -->

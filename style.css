@@ -1120,9 +1120,26 @@ img.custom-logo{
 		height: 65px;
 		background: transparent;
 	}
-	.menu-items li{
-		padding: 20px 35px;
+	nav ul{
+		list-style-type: none;
+		padding: 0;
 	}
+
+	nav li.menu-item a{
+		display: block;
+		padding: 20px 0;
+		color: #747474;
+		text-align: center;
+	}
+
+@media screen and (min-width: 768px){
+	nav .menu-menu-1-container ul{
+		display: flex;
+	}
+	nav li.menu-item{
+		flex: 1 1 0;
+	}
+}
 
 /*--------------------------------------------------------------
 # Placeholder
@@ -1132,7 +1149,7 @@ img.custom-logo{
 	margin-top: 30px;
 	width: 100%;
 	height: 600px;
-	background: red;
+	background: transparent;
 }
 
 
@@ -1170,7 +1187,7 @@ img.custom-logo{
 
 	/* .site-footer-nesletter, */
 	.site-footer-menu{
-		border-top:1px solid #414141;
+		/* border-top:1px solid #414141; */
 	}
 
 	.site-footer-sig{
