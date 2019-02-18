@@ -4,10 +4,10 @@ $(document).ready( function () {
 
 var breakpoint = 860;
 
-if ($(document).width() <= breakpoint){
+
   $("#primary-menu").css("display","none");
 
-}
+
 
   $('.menu-toggle').click(function(e) {
     e.preventDefault();
