@@ -54,7 +54,7 @@
 	<?php
 	if ( is_front_page() ) :
 		echo '<div class="placeholder wrapper">';
-		echo do_shortcode( '[slider id="348"]' );
+		echo do_shortcode( '[slider id="337"]' );
 		echo '</div>';
 	endif;
 		?>

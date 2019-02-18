@@ -149,14 +149,23 @@ add_action( 'widgets_init', 'luna_widgets_init' );
  */
 function luna_scripts() {
 	wp_enqueue_style( 'luna-style', get_stylesheet_uri() );
+	wp_enqueue_style('slider-css', get_template_directory_uri() . '/css/slider.css', array(), '1.0');
 
-	wp_enqueue_script( 'jquery-update', get_template_directory_uri() . '/js/jquery-2.2.4.min.js', array(), '2.2.4', true );
+	wp_enqueue_script('jquery');
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-2.2.4.min.js', '2.2.4', false);
+        wp_enqueue_script('jquery');
+    }
+	//wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-2.2.4.min.js', array(), '2.2.4', true );
 
 	wp_enqueue_script( 'luna-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'luna-contact-form', get_template_directory_uri() . '/js/contact-form.js', array( 'jquery' ), '1.3', true);
+	wp_enqueue_script( 'luna-contact-form', get_template_directory_uri() . '/js/contact-form.js', array(), '1.3', true);
 
 	wp_enqueue_script( 'luna-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	wp_enqueue_script('script-slider', get_template_directory_uri() . '/js/slider.js', array(), '1.0', true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
