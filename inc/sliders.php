@@ -11,7 +11,7 @@ add_action('init', 'slider_register');
 function slider_register()
 {
     $labels = array(
-        'name' => _x('Slidery', 'post type general name'),
+        'name' => _x('Slider', 'post type general name'),
         'singular_name' => _x('Slider', 'post type singular name'),
         'add_new' => _x('Pridať nový', 'Slider'),
         'add_new_item' => __('Pridať nový slider'),

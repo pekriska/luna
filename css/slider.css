@@ -9,7 +9,7 @@
   -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
-  z-index: 999999;
+  z-index: 99;
   padding: 10px 0;
   -webkit-box-sizing:content-box;
   -moz-box-sizing:content-box;
@@ -17,7 +17,7 @@
   }
   
   .jquery-script-center {
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
   }
   .jquery-script-center ul {
@@ -32,8 +32,8 @@
     text-decoration:none;
   }
   .jquery-script-ads {
-  width: 728px;
-  height:90px;
+  width: 100%;
+  height:600px;
   float:right;
   }
   .jquery-script-clear {
@@ -42,8 +42,9 @@
   }
 .g_slide {
   position: relative;
-  width: 752px;
-  height: 350px;
+  width: 100%;
+  height: 600px;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -59,9 +60,10 @@
 .g_slide .switch_nav {
   width: 100%;
   position: absolute;
+  display: block;
   right: 0;
   bottom: 10px;
-  z-index: 11;
+  z-index: 1000;
   text-align: center;
 }
 
@@ -104,7 +106,7 @@
 
 .g_slide .next {
   right: -18px;
-  _right: 10px;
+  _right: 30px;
   background-position: -19px 0;
 }
 

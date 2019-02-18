@@ -1131,10 +1131,15 @@ img.custom-logo{
 		color: #747474;
 		text-align: center;
 	}
+	nav li.menu-item a:hover{
+		background: #00CCFC;
+		color: #fff;
+	}
 
 @media screen and (min-width: 768px){
 	nav .menu-menu-1-container ul{
 		display: flex;
+		justify-content: flex-start;
 	}
 	nav li.menu-item{
 		flex: 1 1 0;
@@ -1160,7 +1165,9 @@ img.custom-logo{
 	width: 100%;
 	min-height: 200px;
 	margin-top: -100px;
-	z-index: 10000;
+	z-index: 999999;
+	position: relative;
+	background: red;
 }
 
 
