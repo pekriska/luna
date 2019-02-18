@@ -81,7 +81,8 @@ function drossel_sliders($atts, $content = null)
         $(function(){
             switchable({
 		        $element: $('#slides1'),
-		        interval: 2000,
+				interval: 5000,
+				animateSpeed: 2000,
 		        effect: 'fade'
 	        });
         });
